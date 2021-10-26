@@ -2,14 +2,15 @@
   background-color: var(--secondary-bg-color);
 }
 
-.team-list {
-  display: flex;
-  margin-left: calc(-1 * var(--card-set-marg));
-}
+// .team-list {
+//   display: flex;
+//   margin-left: calc(-1 * var(--card-set-marg));
+// }
 
 .team-list__item {
-  flex-basis: calc(100% / 4 - var(--card-set-marg));
-  margin-left: var(--card-set-marg);
+  width: 100%;
+  // flex-basis: calc(100% / 4 - var(--card-set-marg));
+  // margin-left: var(--card-set-marg);
   overflow: hidden;
 
   background-color: var(--basic-bg-color);
@@ -32,8 +33,7 @@
   text-align: center;
   margin-bottom: 16px;
 }
-
 .team-list__card-bottom {
-  padding-top: var(--card-set-marg);
-  padding-bottom: var(--card-set-marg);
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
