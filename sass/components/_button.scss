@@ -1,0 +1,11 @@
+.button {
+  display: flex;
+  border-radius: 4px;
+  margin-top: 0;
+  @include flex();
+
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  border: transparent;
+}
