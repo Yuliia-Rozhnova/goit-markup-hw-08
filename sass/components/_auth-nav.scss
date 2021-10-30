@@ -1,7 +1,9 @@
 .auth-nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
 }
 
 .auth-nav__link {

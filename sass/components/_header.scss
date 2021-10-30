@@ -4,5 +4,63 @@
 
 .header__container {
   display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+    }
+  }
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  min-height: 40px;
+  min-width: 40px;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  fill: #2196f3;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: transparent;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-button {
+  position: absolute;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
 }

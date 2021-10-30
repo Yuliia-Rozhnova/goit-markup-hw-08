@@ -21,8 +21,23 @@
     <!--Шапка сайта-->
     <header class="header">
      <div class="container header__container">
+        
         <a href="" class="logo header__logo">Web<span class="header__logo--black">Studio</span></a>
+       
+            <button type="button" class="menu-button" js-open-menu aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="16">
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu_24px-3"></use>
+                </svg>
+            </button>
+            <div class="menu-container" js-menu-container id="mobile-menu">
         <nav>
+            
+            <button type="button" class="menu-button" js-close-menu>
+            <svg width="17" height="17">
+                <use class="icon-menu" href="./images/icons.svg#icon-close_24px"></use>
+            </svg>
+            </button>
+            <div class="mobile-menu">
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="" class="link site-nav__link">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
@@ -39,6 +54,8 @@
                     <use href="./images/icons.svg#icon-smartphone"></use></svg>
                 +38 096 111 11 11</a></li>
         </ul>
+        </div>
+        </div>
         </div> 
     </header>
     <main>
@@ -48,7 +65,7 @@
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="button hero__btn" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
 
         <!--Особливості-->
          <section class="feature section">
@@ -93,7 +110,7 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section> 
     
         <!--Чим ми займаємося-->
         <!-- <section class="section work">
@@ -321,7 +338,7 @@
                 </li>
                 </div>
         </section>
-    </main>  -->
+    </main> 
 
     <!--Підвал-->
      <footer class="footer">
@@ -440,5 +457,6 @@
 </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
-</html>  -->
+</html> 
