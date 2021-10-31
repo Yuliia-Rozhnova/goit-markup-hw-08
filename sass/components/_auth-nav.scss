@@ -7,33 +7,41 @@
 }
 
 .auth-nav__link {
-  color: var(--basic-text-color);
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    color: #2196f3;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 
 .auth-nav__icon {
-  fill: var(--basic-text-color);
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    fill: var(--basic-text-color);
+    margin-right: 10px;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .auth-nav__link:hover &,
-  .auth-nav__link:focus & {
-    fill: var(--accent-color);
+    .auth-nav__link:hover &,
+    .auth-nav__link:focus & {
+      fill: var(--accent-color);
+    }
   }
 }
+
 .auth-nav__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
