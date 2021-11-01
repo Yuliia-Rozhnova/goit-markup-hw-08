@@ -21,21 +21,17 @@
 }
 
 .site-nav__link {
-  @media screen and (max-width: 767px) {
-    color: #212121;
-    font-size: 40px;
-    letter-spacing: 0.02em;
-    line-height: 1.18;
-    margin-bottom: 32px;
+  letter-spacing: 0.02em;
+  line-height: 1.18;
+  margin-bottom: 32px;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
 
