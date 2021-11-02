@@ -24,18 +24,7 @@
         
         <a href="" class="logo header__logo">Web<span class="header__logo--black">Studio</span></a>
        
-            <!-- <button type="button" class="menu-button" js-open-menu aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="24" height="16">
-                    <use class="icon-menu" href="./images/icons.svg#icon-menu_24px-3"></use>
-                </svg>
-            </button>
-            <div class="menu-container" js-menu-container id="mobile-menu"> -->
         <nav>
-             <!-- <button type="button" class="menu-button" js-close-menu>
-            <svg width="17" height="17">
-                <use class="icon-menu" href="./images/icons.svg#icon-close_24px"></use>
-            </svg>
-            </button> -->
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="" class="link site-nav__link">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
@@ -452,43 +441,37 @@
 </form>
 </div>
 </div>
-
+<div class="menu-container">
 <div class="mobile-menu">
-    <ul class="navigation">
-        <li class="navigation__item"><a href="" class="link navigation__link">Студия</a></li>
-        <li class="navigation__item"><a href="" class="link navigation__link">Портфолио</a></li>
-        <li class="navigation__item"><a href="" class="link navigation__link">Контакты</a></li>
+    <button type="button" class="mobile-menu__button" menu-open-btn>
+        <svg>
+            <use class="mobile-menu__icon" href="./images/icons.svg#icon-close_24px"></use>
+            <use class="mobile-menu__icon" href="./images/icons.svg#icon-menu_24px-3"></use>
+        </svg>
+            </button>
+            <div class="mobile">
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Студия</a></li>
+        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Портфолио</a></li>
+        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Контакты</a></li>
     </ul>
-    <ul class="communication">
-        <li class="communication__item"><a href="tel:+380961111111" class="link communication__link">+38 096 111 11 11</a></li>
-        <li class="communication__item"><a href="mailto:info@devstudio.com" class="link communication__email"></a>info@devstudio.com</li>
+    <ul class="mobile-menu__list-aut">
+        <li class="mobile-menu__item"><a href="tel:+380961111111" class="link mobile-menu__link-tel">+38 096 111 11 11</a></li>
+        <li class="mobile-menu__item"><a href="mailto:info@devstudio.com" class="link mobile-menu__link-email">info@devstudio.com</a></li>
     </ul>
-    <ul class="social">
-        <li class="social__item"><a href="" class="link social__link">Instagram</a></li>
-        <li class="social__item"><a href="" class="link social__link">Twitter</a></li>
-        <li class="social__item"><a href="" class="link social__link">Facebook</a></li>
-        <li class="social__item"><a href="" class="link social__link">LinkedIn</a></li>
+    </div>
+    <ul class="mobile-menu__social">
+        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">Instagram</a></li>
+        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">Twitter</a></li>
+        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">Facebook</a></li>
+        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">LinkedIn</a></li>
     </ul>
-</div>
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 </div>
-
-
+</div>
 
 <script src="./js/modal.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-<script defer src="./js/mobile-menu.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html> 
