@@ -1,11 +1,13 @@
 .auth-nav {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+    }
   }
 }
-
 .auth-nav__link {
   color: #757575;
   transition-property: color;

@@ -205,7 +205,13 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
   .site-nav {
     display: flex;
     align-items: center;
@@ -261,7 +267,13 @@ img {
   opacity: 1;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 1200px) {
   .auth-nav {
     display: flex;
     margin-left: auto;
@@ -300,59 +312,9 @@ img {
   }
 }
 
-/* // .menu-button {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 40px;
-//   min-width: 40px;
-
-//   margin: 0;
-//   padding: 0;
-//   background-color: transparent;
-//   border: none;
-//   cursor: pointer;
-//   outline: none;
-
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
-
-// .menu-button:hover,
-// .menu-button:focus {
-//   fill: #2196f3;
-// }
-
-// .menu-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   padding: 22px;
-//   background-color: #ffffff;
-//   z-index: 999;
-
-//   transform: translateX(100%);
-//   transition-property: transform;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .menu-container.is-open {
-//   transform: translateX(0);
-// }
-
-// .menu-container .menu-button {
-//   position: absolute;
-//   padding-top: 10px;
-//   padding-right: 15px;
-// } */
 .menu-container {
   position: fixed;
   display: flex;
-  justify-content: space-between;
   top: 0;
   margin: 0;
   padding-top: 21px;
@@ -363,6 +325,15 @@ img {
   height: 100vh;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container .is-open {
+  transform: translateX(0%);
 }
 
 .mobile-menu__button {
@@ -375,58 +346,81 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
-.mobile-grow {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
 }
 
-.mobile-menu__list {
-  padding-top: 27px;
+.mobile-menu-button:hover,
+.mobile-menu-button:focus {
+  fill: #2196f3;
 }
 
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
+.menu-container .mobile-menu__button {
+  position: absolute;
 }
 
-.mobile-menu__link {
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu__list {
+    padding-top: 27px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu__item .mobile-menu__link {
   color: #212121;
   font-size: 40px;
   line-height: calc(47 / 40);
   text-align: center;
 }
 
-.mobile-menu__list-aut {
+.mobile-menu__item .mobile-menu__list-aut {
   margin-bottom: 64px;
 }
 
-.mobile-menu__link-tel {
+.mobile-menu__item .mobile-menu__link-tel {
   color: #2196f3;
   font-size: 34px;
   line-height: calc(40 / 34);
   margin-bottom: 32px;
 }
 
-.mobile-menu__link-email {
+.mobile-menu__item .mobile-menu__link-email {
   color: #757575;
   font-size: 24px;
   line-height: calc(28 / 24);
 }
 
-.mobile-menu__social {
+.mobile-menu__item .mobile-menu__social {
   display: flex;
 }
 
-.mobile-menu__link-soc {
+.mobile-menu__item .mobile-menu__link-soc {
   color: #2196f3;
   font-size: 18px;
   line-height: calc(22 / 18);
   margin-right: 10px;
 }
 
-.mobile-menu__link-soc ::before {
+.mobile-menu__item .mobile-menu__link-soc ::before {
   content: '';
   width: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
