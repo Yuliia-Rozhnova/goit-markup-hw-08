@@ -23,12 +23,13 @@
      <div class="container header__container">
         
         <a href="" class="logo header__logo">Web<span class="header__logo--black">Studio</span></a>
-        <button type="button" class="mobile-menu__button js-open-menu" aria-expanded="false"
-          aria-controls="mobile-menu">
+        <button type="button" class="mobile-menu__button is-open" aria-expanded="false"
+          aria-controls="mobile-menu js-open-menu" >
             <svg width="24" height="16">
                 <use class="mobile-menu__icon" href="./images/icons.svg#icon-menu_24px-3"></use>
             </svg>
         </button>
+        
         <nav>
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="" class="link site-nav__link">Студия</a></li>
@@ -446,35 +447,43 @@
 </form>
 </div>
 </div>
-<div class="container menu-container js-menu-container is-open" id="mobile-menu"> 
-   
-<div class="mobile-menu">
+<div class="menu-container js-menu-container" id="mobile-menu">
     <button type="button" class="mobile-menu__button js-close-menu">
         <svg width="18" height="18">
-            <use class="mobile-menu__icon" href="./images/icons.svg#icon-close_24px"></use>
+            <use class="mobile-menu__close" href="./images/icons.svg#icon-close_24px"></use>
         </svg>
     </button>
-            <div class="mobile">
-    <ul class="mobile-menu__list">
-        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Студия</a></li>
-        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Портфолио</a></li>
-        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Контакты</a></li>
-    </ul>
-    <ul class="mobile-menu__list-aut">
-        <li class="mobile-menu__item"><a href="tel:+380961111111" class="link mobile-menu__link-tel">+38 096 111 11 11</a></li>
-        <li class="mobile-menu__item"><a href="mailto:info@devstudio.com" class="link mobile-menu__link-email">info@devstudio.com</a></li>
-    </ul>
+    <div class="mobile-menu">
+        <div class="mobile-content">
+            <div class="menu-nav">
+                <ul class="menu-nav__list">
+                    <li class="menu-nav__item"><a href="" class="link menu-nav__link">Студия</a></li>
+                    <li class="menu-nav__item"><a href="" class="link menu-nav__link">Портфолио</a></li>
+                    <li class="menu-nav__item"><a href="" class="link menu-nav__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="menu-cont">
+                <ul class="menu-cont__list">
+                    <li class="menu-cont__item"><a href="tel:+380961111111" class="link menu-cont__link-tel">+38 096 111
+                            11 11</a></li>
+                    <li class="menu-cont__item"><a href="mailto:info@devstudio.com"
+                            class="link menu-cont__link-email">info@devstudio.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-social">
+            <ul class="menu-social__list">
+                <li class="menu-social__item"><a href="" class="link menu-social__link">Instagram</a></li>
+                <li class="menu-social__item"><a href="" class="link menu-social__link">Twitter</a></li>
+                <li class="menu-social__item"><a href="" class="link menu-social__link">Facebook</a></li>
+                <li class="menu-social__item"><a href="" class="link menu-social__link">LinkedIn</a></li>
+            </ul>
+        </div>
     </div>
-    <ul class="mobile-menu__social">
-        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">Instagram</a></li>
-        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">Twitter</a></li>
-        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">Facebook</a></li>
-        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link-soc">LinkedIn</a></li>
-    </ul>
-    </div>
+</div>
+</div>
 
-</div>
-</div>
+
 
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
