@@ -20,6 +20,9 @@
 .footer__logo {
   margin-right: 0;
   margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__logo--white {
