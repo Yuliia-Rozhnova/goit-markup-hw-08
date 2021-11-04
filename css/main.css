@@ -1035,7 +1035,7 @@ img {
 }
 
 .portfolio-list__link {
-  display: block;
+  width: 100%;
   text-decoration: none;
   color: var(--basic-text-color);
   transition-property: box-shadow;
@@ -1048,6 +1048,8 @@ img {
 }
 
 .portfolio-list__bottom {
+  display: flex;
+  flex-direction: column;
   padding: 20px 25px 20px 25px;
   background: var(--basic-bg-color);
   border: 1px solid #eeeeee;
