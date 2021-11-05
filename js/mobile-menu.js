@@ -15,7 +15,7 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
-  openMenuBtn.addEventListener('click', toggleMenu);
+  // openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {

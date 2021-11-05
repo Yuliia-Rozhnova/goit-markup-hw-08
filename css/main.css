@@ -484,8 +484,9 @@ img {
   background-color: var(--bg-color);
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header mob 1jpg");
   max-width: 100%;
-  max-height: 400px;
+  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -493,9 +494,33 @@ img {
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header mob 2.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header tabl 1.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header tabl 2.jpg");
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    min-height: 600px;
+    background-image: linear-gradient(to right, rgba 47, 48, 58, 0.4, rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header dest 2.jpg");
   }
 }
 
@@ -1020,6 +1045,11 @@ img {
   margin-bottom: 4px;
 }
 
+.portfolio-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-list__item {
     flex-basis: calc(100% / 2 - 30px);
@@ -1048,8 +1078,8 @@ img {
 }
 
 .portfolio-list__bottom {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
   padding: 20px 25px 20px 25px;
   background: var(--basic-bg-color);
   border: 1px solid #eeeeee;
@@ -1057,6 +1087,7 @@ img {
 }
 
 .portfolio-list__overlay {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }

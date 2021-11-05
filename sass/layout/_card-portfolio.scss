@@ -20,6 +20,8 @@
 }
 
 .portfolio-list__item {
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -48,8 +50,8 @@
 }
 
 .portfolio-list__bottom {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
   padding: 20px 25px 20px 25px;
   background: var(--basic-bg-color);
   border: 1px solid #eeeeee;
@@ -57,6 +59,7 @@
 }
 
 .portfolio-list__overlay {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
