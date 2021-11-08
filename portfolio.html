@@ -20,6 +20,11 @@
     <header class="header">
     <div class="container header__container">
         <a href=""class="logo header__logo">Web<span class="header__logo--black">Studio</span></a>
+        <button type="button" class="mobile-menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="16">
+                <use class="mobile-menu__icon" href="./images/icons.svg#icon-menu_24px-3"></use>
+            </svg>
+        </button>
         <nav>
             <ul class="site-nav">
                 <li class="site-nav__item"><a href="./index.html" class="link site-nav__link">Студия</a></li>
@@ -194,7 +199,7 @@ media="(min-width: 1200px)" />
                         <div class="portfolio-list__overlay">
                             <picture>
                                 <source srcset="./images/insp.jpg 1x,
-                                                .images/port-dest-dest-2x.jpg 2x" 
+                                                ./images/port-dest-dest-2x.jpg 2x" 
                                                 media="(min-width: 1200px)" />
                             
                                 <source srcset="./images/port-dest-tabl-1x.jpg 1x,
