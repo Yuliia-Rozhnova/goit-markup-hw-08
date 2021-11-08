@@ -22,10 +22,10 @@
 .portfolio-list__item {
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    height: 100%;
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 0;
 
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 3 - var(--card-set-marg));
@@ -34,6 +34,9 @@
 }
 
 .portfolio-list__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: var(--basic-text-color);
 
@@ -49,6 +52,7 @@
 }
 
 .portfolio-list__bottom {
+  flex-grow: 1;
   padding: 20px 25px 20px 25px;
   background: var(--basic-bg-color);
   border: 1px solid #eeeeee;
