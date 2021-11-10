@@ -507,7 +507,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
+    position: relative;
     min-width: 528px;
     min-height: 581px;
   }
