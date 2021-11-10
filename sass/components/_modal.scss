@@ -1,7 +1,7 @@
 .modal {
   position: relative;
-  min-width: 450px;
-  min-height: 609px;
+  min-width: 528px;
+  min-height: 581px;
   padding: 40px;
 
   background-color: var(--basic-bg-color);
@@ -14,11 +14,6 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
-  }
 }
 
 .btn {
