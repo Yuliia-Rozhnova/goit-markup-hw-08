@@ -25,22 +25,20 @@
 }
 
 .footer__address {
-  max-width: 231px;
-  margin-bottom: 60px;
-
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
 
 .footer__soc-container {
-  width: 206px;
-  margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 }
-
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -99,6 +97,11 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
+.footer__form {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
 .footer__form-set {
   @media screen and (min-width: 1200px) {
     display: flex;

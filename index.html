@@ -32,7 +32,7 @@
         
         <nav>
             <ul class="site-nav">
-                <li class="site-nav__item"><a href="" class="link site-nav__link">Студия</a></li>
+                <li class="site-nav__item"><a href="" class="link site-nav__link site-nav__link--current">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
             </ul>
@@ -138,8 +138,8 @@
                                  media="(min-width: 768px)"/>
                         <source 
                         srcset="./images/img-4team-mob-1x.jpg 1x,
-                        ./images/img-4team-mob-1x.jpg 2x" 
-                         media="(min-width: 480px)"/>
+                        ./images/img-4team-mob-2x.jpg 2x" 
+                         media="max-width: 480px"/>
                     <img src="./images/img.jpg" alt="фото дизайнер" width="270">
                     </picture>
 
@@ -191,7 +191,7 @@
 
                         <source srcset="./images/img-1team-mob-1x.jpg 1x,
                                         ./images/img-1team-mob-2x.jpg 2x"
-                         media="(min-width: 480px)" />
+                         media="(max-width: 450px)" />
                 
                     <img src="./images/img2.jpg" alt="фото фронтэнд" width="270">
                     </picture>
@@ -245,7 +245,7 @@
 
                         <source srcset="./images/img-2team-mob-1x.jpg 1x,
                                         ./images/img-team2-mob-2x.jpg 2x"
-                         media="(min-width: 480px)"/>
+                         media="(max-width: 480px)"/>
     
                     <img src="./images/img3.jpg" alt="фото маркетолог" width="270">
                     </picture>
@@ -297,7 +297,7 @@
 
                         <source srcset="./images/img-3team-mob-1x.jpg 1x,
                         ./images/img-3team-mob-2x.jpg 2x"
-                         media="(min-width: 480px)" />
+                         media="(max-width: 480px)" />
                     
                     <img src="./images/img4.jpg" alt="фото інтерфейс дизайнер" width="270">
                     </picture>
@@ -521,6 +521,7 @@
                     <li class="menu-nav__item"><a href="" class="link menu-nav__link">Контакты</a></li>
                 </ul>
             </div>
+            <div class="menu-contacts">
             <div class="menu-cont">
                 <ul class="menu-cont__list">
                     <li class="menu-cont__item"><a href="tel:+380961111111" class="link menu-cont__link-tel">+38 096 111
@@ -529,7 +530,6 @@
                             class="link menu-cont__link-email">info@devstudio.com</a></li>
                 </ul>
             </div>
-        </div>
         <div class="menu-social">
             <ul class="menu-social__list">
                 <li class="menu-social__item"><a href="" class="link menu-social__link">Instagram</a></li>
@@ -540,8 +540,7 @@
         </div>
     </div>
 </div>
-
-
+</div>
 
 <script src="./js/modal.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

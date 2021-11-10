@@ -36,8 +36,9 @@
 }
 
 .site-nav__link {
-  @media screen and (min-width: 768px) {
-    &::after {
+  &::after {
+    @media screen and (min-width: 768px) {
+      position: absolute;
       display: block;
       content: '';
       width: 100%;
@@ -57,7 +58,30 @@
 .site-nav__link {
   &:hover {
     &::after {
+      @media screen and (min-width: 768px) {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.site-nav__link--current {
+  &::after {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+      bottom: -1px;
       opacity: 1;
     }
+  }
+}
+.site-nav__link--current {
+  @media screen and (min-width: 768px) {
+    color: var(--accent-color);
   }
 }
