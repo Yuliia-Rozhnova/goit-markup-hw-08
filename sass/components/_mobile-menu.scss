@@ -51,8 +51,9 @@
 }
 
 .menu-nav {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
+
 .menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -78,9 +79,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .menu-cont__item:not(:last-child) {
   margin-bottom: 32px;
 }
+
 .menu-cont__list {
   margin-bottom: 64px;
 }
